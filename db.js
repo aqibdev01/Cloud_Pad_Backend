@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const mongoURI = "mongodb://localhost:27017/"
+const mongoURI = "mongodb://localhost:27017/CloudPad"
 
 const connectToMongo = async ()=>{
     await mongoose.connect(mongoURI)

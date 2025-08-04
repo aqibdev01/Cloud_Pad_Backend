@@ -17,8 +17,10 @@ const UserSchema = new Schema({
   },
   timestamp: {
     type: Date,
-    required: Date.now,
+    default: Date.now,
   },
 });
 
-export const User = mongoose.model('user', UserSchema)
+const User = mongoose.model('user', UserSchema)
+
+export default User;
